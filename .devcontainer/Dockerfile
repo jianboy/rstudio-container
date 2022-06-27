@@ -28,7 +28,7 @@ RUN echo "r-cran-repos=${CRAN_URL}" >> /etc/rstudio/rsession.conf \
       && usermod -a -G vscode rstudio \
       && echo rstudio:rstudio | chpasswd  \
       && mkdir -p /home/rstudio/workspaces \
-      && ln -s /workspaces /home/rstudio/workspaces
+      && ln -s /workspaces/RStudio-container /home/rstudio/workspaces
 
 RUN apt-get -y autoremove \
 && apt-get clean \
