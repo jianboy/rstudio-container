@@ -1,0 +1,3 @@
+[submodule "R-note"]
+	path = R-note
+	url = https://git.yoqi.me/lyq/R-note.git
